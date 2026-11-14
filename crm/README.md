@@ -30,6 +30,10 @@ Sem `ADMIN_PASSWORD`, uma senha aleatória do administrador é exibida no log na
 
 ## Hospedar no Google Cloud (Cloud Run + Firestore)
 
+**Jeito rápido:** abra o [Google Cloud Shell](https://shell.cloud.google.com), entre na pasta `crm` deste repositório e rode `bash deploy.sh`. O script ativa as APIs, cria o Firestore e o segredo de sessão, publica no Cloud Run e mostra o endereço e a senha inicial.
+
+Passo a passo manual:
+
 1. Crie um projeto no [console.cloud.google.com](https://console.cloud.google.com) e instale o `gcloud`.
 2. Ative as APIs e crie o banco Firestore (modo nativo, região São Paulo):
    ```bash
